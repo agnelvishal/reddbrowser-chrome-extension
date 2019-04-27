@@ -1,7 +1,7 @@
   {
       "name": "Redd Browser",
       "version": "1.0",
-      "description": "Get comments from Reddit for every website!",
+      "description": "Discover comments from Reddit for every website you visit",
       "background": {
           "scripts": ["background.js"],
           "persistent": false
@@ -18,7 +18,7 @@
       },
       "browser_action": {
           "default_popup": "popup.html",
-          "default_title": "Left click to find Reddit posts!"
+          "default_title": "Left click to find Reddit posts"
       },
       "manifest_version": 2
   }
