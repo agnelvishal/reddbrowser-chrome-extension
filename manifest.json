@@ -3,7 +3,7 @@
       "version": "1.0",
       "description": "Get comments from Reddit for every website!",
       "background": {
-          "scripts": ["a.js"],
+          "scripts": ["background.js"],
           "persistent": false
       },
       "permissions": [
