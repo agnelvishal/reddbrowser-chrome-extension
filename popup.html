@@ -1,0 +1,223 @@
+<html>
+
+<head>
+    <script src="jquery.js">
+    </script>
+
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #fafafa;
+            ;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: rgba(197, 201, 204, 0.6);
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(197, 201, 204, 0.6);
+        }
+
+        main {
+            padding: 10px;
+        }
+
+
+        @font-face {
+            font-family: "Roboto_Regular";
+            src: url("/Roboto/Roboto-Regular.ttf");
+        }
+
+        @font-face {
+            font-family: "Roboto_Medium";
+            src: url("/Roboto/Roboto-Medium.ttf");
+        }
+
+        @font-face {
+            font-family: "Roboto_Light";
+            src: url("/Roboto/Roboto-Light.ttf");
+        }
+
+
+        #target {
+
+            float: right;
+            border-radius: 999px;
+            background: rgba(100, 156, 219, 0.85);
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.19);
+            font-family: Roboto_Medium;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 13px;
+            text-align: center;
+            width: 91px;
+            height: 32px;
+            color: #F2F2F2;
+            cursor: pointer;
+
+            border: none;
+        }
+
+        #target:hover {
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.10);
+            background: rgba(50, 156, 219, 0.85);
+
+        }
+
+        #target svg {
+            margin-right: 5px;
+        }
+
+        header {
+            border-bottom: 1px solid #DDDDDD;
+            padding: 5px;
+            height: 26px;
+            background: #fafafa;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            background: #fafafa;
+        }
+
+        #logo {
+            position: absolute;
+            width: 22px;
+            height: 22px;
+            left: 16px;
+            top: 8px;
+        }
+
+        header h1 {
+            position: absolute;
+            width: 167px;
+            height: 28px;
+            left: 51px;
+            top: 8px;
+
+            font-family: Roboto_Medium;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+
+            color: #333333;
+            margin: 2px;
+            padding: 0;
+
+            font-weight: 500;
+        }
+
+        #content a:link,
+        #content a:visited,
+        #content a:visited,
+        #content a:hover,
+        #content a:active {
+
+            font-family: Roboto_Regular;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 14px;
+
+            color: #666666;
+            text-decoration: none;
+            display: block
+        }
+
+        #content a {
+            display: block;
+        }
+
+        .post {
+            border: 1px solid #DDDDDD;
+            box-sizing: border-box;
+            border-radius: 6px;
+            margin: 14px 7px;
+            padding: 9px;
+            cursor: pointer;
+        }
+
+        #content strong {
+
+
+            font-family: Roboto_Medium;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12.5px;
+            line-height: 15.5px;
+
+            color: #242626;
+            }
+
+            header a{
+
+            position: absolute;
+            width: 74px;
+            height: 29px;
+            left: 274px;
+            top: 8px;
+
+            font-family: Roboto_Light;
+            font-style: normal;
+            font-size: 15.5px;
+            line-height: 19px;
+
+            color: #333333;
+                            text-decoration: none;
+
+
+            }
+            </style>
+
+            <title>Reddit Loader</title>
+            </head>
+
+            <body style="width:360px; height:480px">
+
+                <header>
+
+        <img id="logo" src="logo.png" />
+
+        <h1>Reddbrowser</h1>
+
+
+        <a href="https://github.com/berg2001/redd-browser-extension", target="_blank">
+            GitHub
+            
+            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.11111 7.11111H0.888889V0.888889H4V0H0.888889C0.395556 0 0 0.4 0 0.888889V7.11111C0 7.6 0.395556 8 0.888889 8H7.11111C7.6 8 8 7.6 8 7.11111V4H7.11111V7.11111ZM4.88889 0V0.888889H6.48444L2.11556 5.25778L2.74222 5.88444L7.11111 1.51556V3.11111H8V0H4.88889Z" fill="#333333"/>
+</svg>
+
+        </a>
+    </header>
+
+    <main>
+        <button id="target">
+            <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.2046 5.20282C12.2046 4.3485 11.5333 3.67725 10.679 3.67725C10.3129 3.67725 9.94674 3.7993 9.70264 4.04339C8.7873 3.49418 7.68889 3.12804 6.40741 3.06702L7.07866 0.626103L9.15344 1.23633C9.15344 1.56002 9.28202 1.87045 9.5109 2.09933C9.73978 2.32821 10.0502 2.45679 10.3739 2.45679C10.6976 2.45679 11.008 2.32821 11.2369 2.09933C11.4658 1.87045 11.5944 1.56002 11.5944 1.23633C11.5944 0.912647 11.4658 0.602218 11.2369 0.373338C11.008 0.144457 10.6976 0.0158739 10.3739 0.0158739C9.94674 0.0158739 9.51958 0.259966 9.33651 0.626103L6.89559 0.0158739C6.71252 -0.0451491 6.59048 0.0768968 6.52945 0.259966L5.79718 3.06702C4.57672 3.12804 3.41728 3.49418 2.50194 4.04339C2.25785 3.7993 1.89171 3.67725 1.52557 3.67725C0.671252 3.67725 0 4.3485 0 5.20282C0 5.75203 0.244092 6.17919 0.671252 6.4843L0.610229 7.03351C0.610229 9.23034 3.05115 11 6.10229 11C9.15344 11 11.5944 9.23034 11.5944 7.03351L11.5333 6.4843C11.9605 6.17919 12.2046 5.75203 12.2046 5.20282ZM4.2716 5.38589C4.69876 5.38589 5.00388 5.75203 5.00388 6.11817C5.00388 6.4843 4.69876 6.85044 4.2716 6.85044C3.84444 6.85044 3.53933 6.54533 3.53933 6.11817C3.53933 5.69101 3.84444 5.38589 4.2716 5.38589ZM8.42116 8.68113C7.32275 9.35238 4.88183 9.35238 3.78342 8.68113C3.66138 8.55908 3.60035 8.37601 3.7224 8.25397C3.84444 8.13192 4.02751 8.0709 4.14956 8.19295C4.88183 8.74215 7.32275 8.74215 8.05503 8.19295C8.17707 8.0709 8.36014 8.13192 8.48219 8.25397C8.60423 8.37601 8.54321 8.55908 8.42116 8.68113ZM7.93298 6.85044C7.50582 6.85044 7.2007 6.4843 7.2007 6.11817C7.2007 5.69101 7.56684 5.38589 7.93298 5.38589C8.36014 5.38589 8.66525 5.75203 8.66525 6.11817C8.66525 6.54533 8.36014 6.85044 7.93298 6.85044Z" fill="#F2F2F2" />
+            </svg>
+            Submit</button>
+
+
+        <div id="content">
+
+
+
+        </div>
+    </main>
+    <script src="b.js">
+    </script>
+</body>
+
+</html>
