@@ -60,7 +60,7 @@ function loadData() {
                         num_comments = children[i].data.num_comments;
 
                         $("#content").append($(
-                            "<a  class='post' href='https://reddit.com" + permalink + "' target='_blank''><p>" + subreddit_name_prefixed + " \u00B7 posted by " + author + "</p><strong>" + title + "</strong><p>" + score + " points \u00B7 posted by " + num_comments + " comments</p> </a>"))
+                            "<a  class='post' href='https://reddit.com" + permalink + "' target='_blank''><p>" + subreddit_name_prefixed + " \u00B7 posted by " + author + "</p><strong>" + title + "</strong><p>" + score + " points \u00B7 " + num_comments + " comments</p> </a>"))
 
                         // Create object from above data.
                         let current_object = {
