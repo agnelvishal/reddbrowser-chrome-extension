@@ -1,6 +1,6 @@
   {
       "name": "Redd Browser for Reddit",
-      "version": "1.0",
+      "version": "1.01",
       "description": "Discover comments from Reddit for every website you visit",
       "background": {
           "scripts": ["background.js"],
