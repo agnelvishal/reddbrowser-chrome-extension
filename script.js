@@ -6,8 +6,6 @@ $("#target").click(function () {
         currentWindow: true
     }, function (tabs) {
 
-        console.log("tabs");
-
         var tab = tabs[0];
         window.open('https://www.reddit.com/submit?url=' + tab.url, '_blank');
 
