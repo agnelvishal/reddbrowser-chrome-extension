@@ -1,6 +1,5 @@
 $("#target").click(function () {
 
-    console.log("xliched");
 
     chrome.tabs.query({
         active: true,
